@@ -58,7 +58,7 @@ function TestApp() {
   const completedCount = todos.filter(todo => todo.completed).length;
 
   // バージョン情報を追加する
-  const version = "1.0.0";
+  const version = "1.0.1";
 
   return (
     <div className="container py-4" style={{ background: '#fff', minHeight: '100vh' }}>

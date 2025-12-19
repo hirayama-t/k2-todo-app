@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="7.289">
+  <testsuite name="App.js" errors="0" failures="0" skipped="0" timestamp="2025-12-19T08:04:19" time="4.242" tests="6">
+    <testcase classname="App.js TestAppコンポーネントが描画される" name="App.js TestAppコンポーネントが描画される" time="0.095">
+    </testcase>
+    <testcase classname="index.js Appがクラッシュせずにレンダリングできる" name="index.js Appがクラッシュせずにレンダリングできる" time="0.037">
+    </testcase>
+    <testcase classname="TestApp.jsx 初期表示でバージョンが表示される" name="TestApp.jsx 初期表示でバージョンが表示される" time="0.013">
+    </testcase>
+    <testcase classname="TestApp.jsx タスク追加・未完了・完了・削除ができる" name="TestApp.jsx タスク追加・未完了・完了・削除ができる" time="0.151">
+    </testcase>
+    <testcase classname="TestApp.jsx フィルタボタンで表示切替" name="TestApp.jsx フィルタボタンで表示切替" time="0.076">
+    </testcase>
+    <testcase classname="TestApp.jsx 空欄で追加しようとするとアラート" name="TestApp.jsx 空欄で追加しようとするとアラート" time="0.013">
+    </testcase>
+  </testsuite>
+</testsuites>
