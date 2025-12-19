@@ -1,17 +1,786 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="0" errors="0" time="7.289">
-  <testsuite name="App.js" errors="0" failures="0" skipped="0" timestamp="2025-12-19T08:04:19" time="4.242" tests="6">
-    <testcase classname="App.js TestAppコンポーネントが描画される" name="App.js TestAppコンポーネントが描画される" time="0.095">
+<testsuites name="jest tests" tests="8" failures="4" errors="0" time="7.867">
+  <testsuite name="App.js" errors="0" failures="4" skipped="0" timestamp="2025-12-19T08:33:53" time="4.722" tests="8">
+    <testcase classname="App.js TestAppコンポーネントが描画される" name="App.js TestAppコンポーネントが描画される" time="0.096">
     </testcase>
-    <testcase classname="index.js Appがクラッシュせずにレンダリングできる" name="index.js Appがクラッシュせずにレンダリングできる" time="0.037">
+    <testcase classname="index.js Appがクラッシュせずにレンダリングできる" name="index.js Appがクラッシュせずにレンダリングできる" time="0.027">
     </testcase>
-    <testcase classname="TestApp.jsx 初期表示でバージョンが表示される" name="TestApp.jsx 初期表示でバージョンが表示される" time="0.013">
+    <testcase classname="TestApp.jsx 初期表示でバージョンが表示される" name="TestApp.jsx 初期表示でバージョンが表示される" time="0.025">
     </testcase>
-    <testcase classname="TestApp.jsx タスク追加・未完了・完了・削除ができる" name="TestApp.jsx タスク追加・未完了・完了・削除ができる" time="0.151">
+    <testcase classname="TestApp.jsx タスク追加・未完了・完了・削除ができる" name="TestApp.jsx タスク追加・未完了・完了・削除ができる" time="0.156">
+      <failure>TestingLibraryElementError: Found multiple elements with the role &quot;checkbox&quot;
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;input
+  class=&quot;form-check-input&quot;
+  id=&quot;importantCheck&quot;
+  type=&quot;checkbox&quot;
+/&gt;
+
+Ignored nodes: comments, script, style
+&lt;input
+  class=&quot;form-check-input me-2&quot;
+  type=&quot;checkbox&quot;
+/&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container py-4&quot;
+      style=&quot;background: rgb(255, 255, 255); min-height: 100vh;&quot;
+    &gt;
+      &lt;div
+        class=&quot;row justify-content-center&quot;
+      &gt;
+        &lt;div
+          class=&quot;col-md-8&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 mb-4&quot;
+            style=&quot;background: rgb(227, 242, 253); border-radius: 8px;&quot;
+          &gt;
+            &lt;h2
+              class=&quot;mb-0&quot;
+            &gt;
+              業務用Todo管理
+            &lt;/h2&gt;
+            &lt;small
+              class=&quot;text-muted&quot;
+            &gt;
+              バージョン: 
+              1.0.1
+            &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;form
+            class=&quot;row g-2 mb-3 align-items-end&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-md-4&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                placeholder=&quot;新しいタスクを入力&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-3&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                min=&quot;2025-12-19&quot;
+                type=&quot;date&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2&quot;
+            &gt;
+              &lt;select
+                class=&quot;form-select&quot;
+              &gt;
+                &lt;option
+                  value=&quot;高&quot;
+                &gt;
+                  高
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;中&quot;
+                &gt;
+                  中
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;低&quot;
+                &gt;
+                  低
+                &lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2 form-check&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-check-input&quot;
+                id=&quot;importantCheck&quot;
+                type=&quot;checkbox&quot;
+              /&gt;
+              &lt;label
+                class=&quot;form-check-label&quot;
+                for=&quot;importantCheck&quot;
+              &gt;
+                重要
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-1&quot;
+            &gt;
+              &lt;button
+                class=&quot;btn btn-primary w-100&quot;
+                type=&quot;submit&quot;
+              &gt;
+                追加
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          &lt;div
+            class=&quot;mb-3 d-flex align-items-center gap-3&quot;
+          &gt;
+            &lt;button
+              class=&quot;btn btn-outline-primary btn-sm active&quot;
+            &gt;
+              全て (
+              1
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-success btn-sm&quot;
+            &gt;
+              未完了 (
+              1
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-secondary btn-sm&quot;
+            &gt;
+              完了 (
+              0
+              )
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;ul
+            class=&quot;list-group&quot;
+          &gt;
+            &lt;li
+              class=&quot;list-group-item d-flex align-items-center justify-content-between&quot;
+            &gt;
+              &lt;div
+                class=&quot;d-flex align-items-center w-100&quot;
+              &gt;
+                &lt;input
+                  class=&quot;form-check-input me-2&quot;
+                  type=&quot;checkbox&quot;
+                /&gt;
+                &lt;span
+                  style=&quot;text-decoration: none; color: rgb(34, 34, 34); font-weight: normal;&quot;
+                &gt;
+                  テストタスク
+                &lt;/span&gt;
+                &lt;span
+                  class=&quot;ms-3 text-secondary small&quot;
+                /&gt;
+                &lt;span
+                  class=&quot;ms-3 badge bg-info text-dark&quot;
+                &gt;
+                  優先度: 
+                  中
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;button
+                class=&quot;btn btn-danger btn-sm&quot;
+              &gt;
+                削除
+              &lt;/button&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at getElementError (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:20:35)
+    at getMultipleElementsFoundError (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:23:10)
+    at C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:55:13
+    at getByRole (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\src\testcase.test.js:34:29)
+    at Promise.then.completed (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:475:34)
+    at TestRunner.runTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\index.js:101:12)
+    at TestScheduler.scheduleTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\TestScheduler.js:333:13)
+    at runJest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\runJest.js:404:19)
+    at _run10000 (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:320:7)
+    at runCLI (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:173:3)
+    at Object.run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-cli\build\cli\index.js:155:37)</failure>
     </testcase>
-    <testcase classname="TestApp.jsx フィルタボタンで表示切替" name="TestApp.jsx フィルタボタンで表示切替" time="0.076">
+    <testcase classname="TestApp.jsx フィルタボタンで表示切替" name="TestApp.jsx フィルタボタンで表示切替" time="0.096">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: 未完了 (1). This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container py-4&quot;
+      style=&quot;background: rgb(255, 255, 255); min-height: 100vh;&quot;
+    &gt;
+      &lt;div
+        class=&quot;row justify-content-center&quot;
+      &gt;
+        &lt;div
+          class=&quot;col-md-8&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 mb-4&quot;
+            style=&quot;background: rgb(227, 242, 253); border-radius: 8px;&quot;
+          &gt;
+            &lt;h2
+              class=&quot;mb-0&quot;
+            &gt;
+              業務用Todo管理
+            &lt;/h2&gt;
+            &lt;small
+              class=&quot;text-muted&quot;
+            &gt;
+              バージョン: 
+              1.0.1
+            &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;form
+            class=&quot;row g-2 mb-3 align-items-end&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-md-4&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                placeholder=&quot;新しいタスクを入力&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-3&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                min=&quot;2025-12-19&quot;
+                type=&quot;date&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2&quot;
+            &gt;
+              &lt;select
+                class=&quot;form-select&quot;
+              &gt;
+                &lt;option
+                  value=&quot;高&quot;
+                &gt;
+                  高
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;中&quot;
+                &gt;
+                  中
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;低&quot;
+                &gt;
+                  低
+                &lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2 form-check&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-check-input&quot;
+                id=&quot;importantCheck&quot;
+                type=&quot;checkbox&quot;
+              /&gt;
+              &lt;label
+                class=&quot;form-check-label&quot;
+                for=&quot;importantCheck&quot;
+              &gt;
+                重要
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-1&quot;
+            &gt;
+              &lt;button
+                class=&quot;btn btn-primary w-100&quot;
+                type=&quot;submit&quot;
+              &gt;
+                追加
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          &lt;div
+            class=&quot;mb-3 d-flex align-items-center gap-3&quot;
+          &gt;
+            &lt;button
+              class=&quot;btn btn-outline-primary btn-sm active&quot;
+            &gt;
+              全て (
+              2
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-success btn-sm&quot;
+            &gt;
+              未完了 (
+              2
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-secondary btn-sm&quot;
+            &gt;
+              完了 (
+              0
+              )
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;ul
+            class=&quot;list-group&quot;
+          &gt;
+            &lt;li
+              class=&quot;list-group-item d-flex align-items-center justify-content-between&quot;
+            &gt;
+              &lt;div
+                class=&quot;d-flex align-items-center w-100&quot;
+              &gt;
+                &lt;input
+                  class=&quot;form-check-input me-2&quot;
+                  type=&quot;checkbox&quot;
+                /&gt;
+                &lt;span
+                  style=&quot;text-decoration: none; color: rgb(34, 34, 34); font-weight: normal;&quot;
+                &gt;
+                  A
+                &lt;/span&gt;
+                &lt;span
+                  class=&quot;ms-3 text-secondary small&quot;
+                /&gt;
+                &lt;span
+                  class=&quot;ms-3 badge bg-info text-dark&quot;
+                &gt;
+                  優先度: 
+                  中
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;button
+                class=&quot;btn btn-danger btn-sm&quot;
+              &gt;
+                削除
+              &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li
+              class=&quot;list-group-item d-flex align-items-center justify-content-between&quot;
+            &gt;
+              &lt;div
+                class=&quot;d-flex align-items-center w-100&quot;
+              &gt;
+                &lt;input
+                  class=&quot;form-check-input me-2&quot;
+                  type=&quot;checkbox&quot;
+                /&gt;
+                &lt;span
+                  style=&quot;text-decoration: none; color: rgb(34, 34, 34); font-weight: normal;&quot;
+                &gt;
+                  B
+                &lt;/span&gt;
+                &lt;span
+                  class=&quot;ms-3 text-secondary small&quot;
+                /&gt;
+                &lt;span
+                  class=&quot;ms-3 badge bg-info text-dark&quot;
+                &gt;
+                  優先度: 
+                  中
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;button
+                class=&quot;btn btn-danger btn-sm&quot;
+              &gt;
+                削除
+              &lt;/button&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at getByText (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\src\testcase.test.js:52:28)
+    at Promise.then.completed (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:475:34)
+    at TestRunner.runTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\index.js:101:12)
+    at TestScheduler.scheduleTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\TestScheduler.js:333:13)
+    at runJest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\runJest.js:404:19)
+    at _run10000 (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:320:7)
+    at runCLI (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:173:3)
+    at Object.run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-cli\build\cli\index.js:155:37)</failure>
     </testcase>
-    <testcase classname="TestApp.jsx 空欄で追加しようとするとアラート" name="TestApp.jsx 空欄で追加しようとするとアラート" time="0.013">
+    <testcase classname="TestApp.jsx 空欄で追加しようとするとアラート" name="TestApp.jsx 空欄で追加しようとするとアラート" time="0.02">
+    </testcase>
+    <testcase classname="TestApp.jsx 拡張機能 期日・優先度・重要フラグ付きでタスク追加・表示" name="TestApp.jsx 拡張機能 期日・優先度・重要フラグ付きでタスク追加・表示" time="0.032">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: /期日|date/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container py-4&quot;
+      style=&quot;background: rgb(255, 255, 255); min-height: 100vh;&quot;
+    &gt;
+      &lt;div
+        class=&quot;row justify-content-center&quot;
+      &gt;
+        &lt;div
+          class=&quot;col-md-8&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 mb-4&quot;
+            style=&quot;background: rgb(227, 242, 253); border-radius: 8px;&quot;
+          &gt;
+            &lt;h2
+              class=&quot;mb-0&quot;
+            &gt;
+              業務用Todo管理
+            &lt;/h2&gt;
+            &lt;small
+              class=&quot;text-muted&quot;
+            &gt;
+              バージョン: 
+              1.0.1
+            &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;form
+            class=&quot;row g-2 mb-3 align-items-end&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-md-4&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                placeholder=&quot;新しいタスクを入力&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-3&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                min=&quot;2025-12-19&quot;
+                type=&quot;date&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2&quot;
+            &gt;
+              &lt;select
+                class=&quot;form-select&quot;
+              &gt;
+                &lt;option
+                  value=&quot;高&quot;
+                &gt;
+                  高
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;中&quot;
+                &gt;
+                  中
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;低&quot;
+                &gt;
+                  低
+                &lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2 form-check&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-check-input&quot;
+                id=&quot;importantCheck&quot;
+                type=&quot;checkbox&quot;
+              /&gt;
+              &lt;label
+                class=&quot;form-check-label&quot;
+                for=&quot;importantCheck&quot;
+              &gt;
+                重要
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-1&quot;
+            &gt;
+              &lt;button
+                class=&quot;btn btn-primary w-100&quot;
+                type=&quot;submit&quot;
+              &gt;
+                追加
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          &lt;div
+            class=&quot;mb-3 d-flex align-items-center gap-3&quot;
+          &gt;
+            &lt;button
+              class=&quot;btn btn-outline-primary btn-sm active&quot;
+            &gt;
+              全て (
+              0
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-success btn-sm&quot;
+            &gt;
+              未完了 (
+              0
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-secondary btn-sm&quot;
+            &gt;
+              完了 (
+              0
+              )
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;ul
+            class=&quot;list-group&quot;
+          &gt;
+            &lt;li
+              class=&quot;list-group-item text-center text-muted&quot;
+            &gt;
+              タスクがありません
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at getAllByLabelText (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\queries\label-text.js:111:38)
+    at C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at getByLabelText (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\src\testcase.test.js:76:30)
+    at Promise.then.completed (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:475:34)
+    at TestRunner.runTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\index.js:101:12)
+    at TestScheduler.scheduleTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\TestScheduler.js:333:13)
+    at runJest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\runJest.js:404:19)
+    at _run10000 (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:320:7)
+    at runCLI (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:173:3)
+    at Object.run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-cli\build\cli\index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="TestApp.jsx 拡張機能 優先度・期日・重要フラグの初期値・変更" name="TestApp.jsx 拡張機能 優先度・期日・重要フラグの初期値・変更" time="0.036">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: /期日|date/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container py-4&quot;
+      style=&quot;background: rgb(255, 255, 255); min-height: 100vh;&quot;
+    &gt;
+      &lt;div
+        class=&quot;row justify-content-center&quot;
+      &gt;
+        &lt;div
+          class=&quot;col-md-8&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 mb-4&quot;
+            style=&quot;background: rgb(227, 242, 253); border-radius: 8px;&quot;
+          &gt;
+            &lt;h2
+              class=&quot;mb-0&quot;
+            &gt;
+              業務用Todo管理
+            &lt;/h2&gt;
+            &lt;small
+              class=&quot;text-muted&quot;
+            &gt;
+              バージョン: 
+              1.0.1
+            &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;form
+            class=&quot;row g-2 mb-3 align-items-end&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-md-4&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                placeholder=&quot;新しいタスクを入力&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-3&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-control&quot;
+                min=&quot;2025-12-19&quot;
+                type=&quot;date&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2&quot;
+            &gt;
+              &lt;select
+                class=&quot;form-select&quot;
+              &gt;
+                &lt;option
+                  value=&quot;高&quot;
+                &gt;
+                  高
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;中&quot;
+                &gt;
+                  中
+                &lt;/option&gt;
+                &lt;option
+                  value=&quot;低&quot;
+                &gt;
+                  低
+                &lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-2 form-check&quot;
+            &gt;
+              &lt;input
+                class=&quot;form-check-input&quot;
+                id=&quot;importantCheck&quot;
+                type=&quot;checkbox&quot;
+              /&gt;
+              &lt;label
+                class=&quot;form-check-label&quot;
+                for=&quot;importantCheck&quot;
+              &gt;
+                重要
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;col-md-1&quot;
+            &gt;
+              &lt;button
+                class=&quot;btn btn-primary w-100&quot;
+                type=&quot;submit&quot;
+              &gt;
+                追加
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          &lt;div
+            class=&quot;mb-3 d-flex align-items-center gap-3&quot;
+          &gt;
+            &lt;button
+              class=&quot;btn btn-outline-primary btn-sm active&quot;
+            &gt;
+              全て (
+              0
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-success btn-sm&quot;
+            &gt;
+              未完了 (
+              0
+              )
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;btn btn-outline-secondary btn-sm&quot;
+            &gt;
+              完了 (
+              0
+              )
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;ul
+            class=&quot;list-group&quot;
+          &gt;
+            &lt;li
+              class=&quot;list-group-item text-center text-muted&quot;
+            &gt;
+              タスクがありません
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at getAllByLabelText (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\queries\label-text.js:111:38)
+    at C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at getByLabelText (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\src\testcase.test.js:103:30)
+    at Promise.then.completed (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at _runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\runTest.js:475:34)
+    at TestRunner.runTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-runner\build\index.js:101:12)
+    at TestScheduler.scheduleTests (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\TestScheduler.js:333:13)
+    at runJest (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\runJest.js:404:19)
+    at _run10000 (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:320:7)
+    at runCLI (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\@jest\core\build\cli\index.js:173:3)
+    at Object.run (C:\Users\hirayama\Documents\作業資料\GitHubCopilotセミナー\20_ソースコード\計測2回目\todo-app\node_modules\jest-cli\build\cli\index.js:155:37)</failure>
     </testcase>
   </testsuite>
 </testsuites>
